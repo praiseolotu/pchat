@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn pchat.wsgi --log-file -
+web: python manage.py migrate && gunicorn pchat.wsgi
